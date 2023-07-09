@@ -1,0 +1,30 @@
+Sorting:-
+
+1. Insertion Sort :-
+
+l=[12,67,10,8,32]
+for i in range(1,len(l)):  #we check predecessor elements
+    for j in range(i):
+        if l[i]<l[j]:
+            l[i],l[j]=l[j],l[i]
+            
+print(l)
+
+2. Selection Sort :-
+
+l=[14,8,90,54,45,65,9]
+for i in range(len(l)-1,0,-1):
+    for j in range(i):
+        if l[j]>l[i]:
+            l[i],l[j]=l[j],l[i]
+            
+print(l)
+
+3. Bubble Sort :-
+
+l=[12,78,5,28,10]
+for i in range(len(l)):
+    for j in range(len(l)-i-1):
+        if l[j]>l[j+1]:
+            l[j],l[j+1]=l[j+1],l[j]
+print(l)
