@@ -1,0 +1,37 @@
+Searching:-
+
+1. Linear Search :-
+
+l=[12,56,23,90,75]
+ele=int(input("Enter an element you want to search: "))
+isfound=False
+for i in l:
+    if i==ele:
+        print("Element found at index: ",l.index(i))
+        isfound=True
+        break
+if isfound==False:
+    print("Element do not exists")
+
+
+2. Binary Search :-
+
+l=[12,56,23,90,75]
+ele=int(input("Enter an element you want to search: "))
+lb=0
+ub=len(l)-1
+l=sorted(l)
+isFound=False
+while(lb<=ub):
+    mid=(lb+ub)//2
+    if ele==l[mid]:
+        print("Element is found at index",mid)
+        isFound=True
+        break
+    elif ele>l[mid]:
+        lb=mid+1
+    else:
+        ub=mid-1
+        
+if isFound==False:
+    print("Element do not exists")
