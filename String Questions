@@ -7,6 +7,16 @@ for i in st:
         count=count+1
 print("Total number of vowels in a string:",count)
 
+#convert the lower to uppercase or vice-versa in a string:
+st=input("Enter a string:")
+st1=""
+for i in st:
+    if i.isupper():
+        st1=st1+i.lower()
+    else:
+        st1=st1+i.upper()
+print(st1)
+
 #check whether the word exists in a string or not:
 st=input("Enter a string: ")
 word=input("Enter a word: ")
