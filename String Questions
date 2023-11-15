@@ -1,0 +1,52 @@
+#count the vowels in a string:
+st=input("Enter a string: ")
+vowels="aeiouAEIOU"
+count=0
+for i in st:
+    if i in vowels:
+        count=count+1
+print("Total number of vowels in a string:",count)
+
+#check whether the word exists in a string or not:
+st=input("Enter a string: ")
+word=input("Enter a word: ")
+if word in st:
+    print("Word exists in input string")
+else:
+    print("Word do not exists")
+
+#count the number of words in a string:
+st=input("Enter a sentence: ")
+count=0
+for i in st.split():
+    count=count+1
+print("Number of words in a sentence are:",count)
+
+#reverse the given string:
+st=input("Enter a string: ")
+print(st[::-1])
+
+#reverse the given string using reversed() function:
+st=input("Enter a string: ")
+print("".join(list(reversed(st))))
+
+#reverse each word of given string:
+st=input("Enter a sentence: ")
+for i in st.split()[::-1]:
+    print(i[::-1],end=" ")
+
+#Check whether the string is palindrome or not:
+st=input("Enter a string: ")
+if st==st[::-1]:
+    print("{} is Palindrome".format(st))
+else:
+    print("{} is not Palindrome".format(st))
+
+#check whether the two strings are anagram or not:
+st1=input("Enter a string: ")
+st2=input("Enter another string: ")
+if sorted(st1)==sorted(st2):
+    print("Both strings are anagram of each other")
+else:
+    print("Both strings are not anagram of each other")
+
